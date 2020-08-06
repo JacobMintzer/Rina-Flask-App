@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Flask Tutorial</title>
-  </head>
-  <body>
-    <h1> My First Try Using Flask </h1>
-    <p> Flask is Fun </p>
-  </body>
+
+<head>
+	<meta charset="utf-8">
+	<title>Rina Board Controller</title>
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<div id="buttonContainer" class="list-group">
+	<a class="list-group-item list-group-item-action">Red</a>
+	<a class="list-group-item list-group-item-action">Blue</a>
+	<a class="list-group-item list-group-item-action">Green</a>
+	<a class="list-group-item list-group-item-action">Pink</a>
+	<a class="list-group-item list-group-item-action">Clear</a>
+</div>
+<script type="module" src = "{{ url_for('static', filename='js/home.js') }}"></script>
+
 </html>
